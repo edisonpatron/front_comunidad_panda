@@ -11,7 +11,7 @@ const savedRecord = () => {
 <template>
 
   <div class="tw-grid lg:tw-grid-cols-4">
-    <Panel header="Tipo de servicio o negocio">
+    <Panel header="Registra la categoria de tu servicio o empresa">
       <CategoriaForm type-form="new" @saved="savedRecord"></CategoriaForm>
     </Panel>
   </div>
