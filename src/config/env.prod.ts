@@ -1,1 +1,1 @@
-export const URL_SERVER: string = "https://api.globalnotaryllc.com/api";
+export const URL_SERVER: string = "https://apipanda.patronedison.com/api";
