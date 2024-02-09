@@ -1,7 +1,7 @@
 import type {AxiosInstance} from 'axios';
 import axios from "axios";
-import {URL_SERVER} from "@/config/env";
-import {useAuthStore} from "@/stores/auth";
+import {URL_SERVER} from "@/config/env.ts";
+import {useAuthStore} from "@/stores/auth.ts";
 
 const apiClient: AxiosInstance = axios.create({
     baseURL: URL_SERVER,
