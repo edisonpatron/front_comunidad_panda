@@ -1,0 +1,1 @@
+Frontend del aplicación para front-end de comunidad de PANDA

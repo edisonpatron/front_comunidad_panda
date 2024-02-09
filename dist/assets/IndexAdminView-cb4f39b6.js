@@ -1,0 +1,1 @@
+import{d as s,o as n,a as t,c as l,F as o,b as e}from"./index-1c448678.js";const a=e("div",null,null,-1),c=e("div",{class:"flex gap-4"},null,-1),_=e("div",{class:"flex gap-4 mt-4"},null,-1),d=e("div",{class:"flex mt-4",style:{width:"58em"}},null,-1),p=s({__name:"IndexAdminView",setup(i){return n(async()=>{}),(r,m)=>(t(),l(o,null,[a,c,_,d],64))}});export{p as default};

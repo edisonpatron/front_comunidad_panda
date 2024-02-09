@@ -1,0 +1,145 @@
+@import 'primeflex/primeflex.scss';
+@import 'primevue/resources/primevue.min.css';
+@import 'primeicons/primeicons.css';
+@import 'primevue/resources/themes/tailwind-light/theme.css';
+/* Controlar bug entre framework de tailwind y primevue en el background del boton principal */
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('./IBMPlexSans/IBMPlexSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('./IBMPlexSans/IBMPlexSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('./IBMPlexSans/IBMPlexSans-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('./IBMPlexSans/IBMPlexSans-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('./IBMPlexSans/IBMPlexSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+.p-button-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.p-button-primary:enabled:hover {
+  background: #4338CA !important;
+  color: #ffffff !important;
+  border-color: #4338CA !important;
+}
+
+// controlar error de icono en inputtext //
+.p-input-icon-left > i:first-of-type, .p-input-icon-right > i:first-of-type {
+  z-index: 1;
+}
+
+// cambiar el tamaño del encabezado de las tablas //
+.p-datatable-thead {
+  height: 3rem;
+  border-bottom: 1.65px solid #eee;
+}
+
+//.p-datatable-thead tr th {
+//  background-color: white !important;
+//}
+
+//.p-column-header-content span {
+//  color: #c5c5d3;
+//}
+
+.p-column-header-content span {
+  font-weight: 600 !important;
+}
+
+// Configurar el ancho del texto del contenido de la tabla
+.p-datatable.p-datatable-sm .p-datatable-tbody > tr > td {
+  font-weight: 500 !important;
+}
+
+//Distribuir la paginacion en la izquierda y derecha
+.p-paginator .p-paginator-current {
+  margin-left: auto !important;
+}
+
+.p-datatable > .p-datatable-header {
+  background-color: transparent;
+  border-top: 0px;
+}
+
+//Configuracion de TAGS
+td .p-tag {
+  border-radius: 0;
+}
+
+td .p-tag.p-tag-success {
+
+  color: #256029;
+  background-color: #c8e6c9;
+}
+
+td .p-tag.p-tag-warning {
+  background-color: #feedaf;
+  color: #8a5340;
+}
+
+/* Configuracion de estilos para los Toast */
+.p-toast-message.p-toast-message-success .p-toast-message-content {
+  border-color: #059669;
+}
+
+.p-toast-message.p-toast-message-warn .p-toast-message-content {
+  border-color: #F59E0B;
+}
+
+.p-toast .p-toast-message.p-toast-message-error {
+  background-color: #ffe7e6;
+}
+
+.p-toast-message.p-toast-message-error .p-toast-message-content {
+  border-color: #ff5757;
+}
+
+.p-toast-message.p-toast-message-info .p-toast-message-content {
+  border-color: #696cff;
+}
+
+/* Configuracion de estilos para botones */
+.p-button-link:hover {
+  text-decoration: underline;
+}
+
+/* Heredar las configuraciones de primevue al documento principal */
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: 'IBMPlexSans', sans-serif;
+  //font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  //margin: 0;
+}

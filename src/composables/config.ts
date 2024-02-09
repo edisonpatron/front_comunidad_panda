@@ -1,0 +1,1 @@
+export const BASE_URL_SERVER: string = 'http://127.0.0.1:5173';
