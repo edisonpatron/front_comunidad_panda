@@ -10,10 +10,9 @@ const savedRecord = () => {
 
 <template>
 
-  <div class="tw-grid tw-grid-cols-4">
+  <div class="tw-grid lg:tw-grid-cols-4">
     <Panel header="Tipo de servicio o negocio">
       <CategoriaForm type-form="new" @saved="savedRecord"></CategoriaForm>
-
     </Panel>
   </div>
 </template>
