@@ -97,7 +97,7 @@ const save = (formData: Categoria) => {
   loading.value = true;
 
   http.post(BackofficeUrls.post(RESOURCESBACKOFFICE.Categorias), formData, {}).then((response: AxiosResponse) => {
-
+    alert('Registro almacenado correctamente');
     toast.add(configMessageSuccessNotification());
     loading.value = false;
     setValues({
