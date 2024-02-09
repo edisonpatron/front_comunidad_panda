@@ -18,6 +18,7 @@ declare module 'vue' {
     CardSeguimientos: typeof import('./src/components/backoffice/dashboard/panel/CardSeguimientos.vue')['default']
     CategoriaForm: typeof import('./src/components/backoffice/categoria/CategoriaForm.vue')['default']
     Column: typeof import('primevue/column')['default']
+    DataTable: typeof import('primevue/datatable')['default']
     DataTableCategoria: typeof import('./src/components/backoffice/categoria/DataTableCategoria.vue')['default']
     DataTableEmpresa: typeof import('./src/components/backoffice/empresa/DataTableEmpresa.vue')['default']
     Dialog: typeof import('primevue/dialog')['default']
